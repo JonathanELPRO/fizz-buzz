@@ -1,10 +1,5 @@
 
 function generarFizzbuzz(n){
-    // const FIZZ=3;
-    // if (n===FIZZ)
-    // {
-    //     return "fizz"
-    // }
     const FIZZ=3;
     const BUZZ=5
     if (n%FIZZ===0)
