@@ -16,4 +16,7 @@ describe("FizzBuzz", () => {
   it("Deberia generar Buzz para un numero que sigue una regla comoo los multiplos de 5", () => {
     expect(generarFizzbuzz(5)).toEqual("Buzz");
   });
+  it("Deberia generar Buzz para un numero que sigue una regla comoo los multiplos de 5", () => {
+    expect(generarFizzbuzz(10)).toEqual("Buzz");
+  });
 });
