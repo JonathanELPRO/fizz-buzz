@@ -9,6 +9,10 @@ function generarFizzbuzz(n){
     {
         return "Fizz"
     }
+    if (n%5===0)
+    {
+        return "Buzz"
+    }
     return n+"";
 }
 export default generarFizzbuzz
