@@ -5,11 +5,13 @@ function generarFizzbuzz(n){
     // {
     //     return "fizz"
     // }
-    if (n%3===0)
+    const FIZZ=3;
+    const BUZZ=5
+    if (n%FIZZ===0)
     {
         return "Fizz"
     }
-    if (n%5===0)
+    if (n%BUZZ===0)
     {
         return "Buzz"
     }
