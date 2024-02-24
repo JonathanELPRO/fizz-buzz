@@ -1,4 +1,4 @@
-import generarFizzbuzz from "./fizzbuzz.js";
+import {generarFizzbuzz,cadenaDeSecuenciaFizzBuzz} from "./fizzbuzz.js";
 
 describe("FizzBuzz", () => {
   it("Deberia generar el mismo numero para uno que no tiene regla para el 1", () => {
@@ -21,5 +21,8 @@ describe("FizzBuzz", () => {
   });
   it("Deberia generar FizzBuzz para un numero que sigue una regla comoo los multiplos de 3 y de 5", () => {
     expect(generarFizzbuzz(15)).toEqual("FizzBuzz");
+  });
+  it("Deberia generar la cadena de una secuencia de FizzBuzz que tiene un limite", () => {
+    expect(cadenaDeSecuenciaFizzBuzz(30)).toEqual("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz");
   });
 });

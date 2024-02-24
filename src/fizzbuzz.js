@@ -1,5 +1,6 @@
 
-function generarFizzbuzz(n){
+function generarFizzbuzz(n)
+{
     const FIZZ=3;
     const BUZZ=5
     if (n%FIZZ===0 && n%BUZZ===0)
@@ -16,4 +17,17 @@ function generarFizzbuzz(n){
     }
     return n+"";
 }
-export default generarFizzbuzz
+function cadenaDeSecuenciaFizzBuzz(limite)
+{
+    let secuencia=""
+    for (let i=1;i<=limite;i++){
+        if (i===limite){
+            secuencia=secuencia+generarFizzbuzz(i)
+        }
+        else{
+            secuencia=secuencia+generarFizzbuzz(i)+" "
+        }
+    }
+    return secuencia
+}
+export {generarFizzbuzz,cadenaDeSecuenciaFizzBuzz}
