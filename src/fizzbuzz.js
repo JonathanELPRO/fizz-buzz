@@ -20,11 +20,14 @@ function generarFizzbuzz(n)
 function cadenaDeSecuenciaFizzBuzz(limite)
 {
     let secuencia=""
-    for (let i=1;i<=limite;i++){
-        if (i===limite){
+    for (let i=1;i<=limite;i++)
+    {
+        if (i===limite)
+        {
             secuencia=secuencia+generarFizzbuzz(i)
         }
-        else{
+        else
+        {
             secuencia=secuencia+generarFizzbuzz(i)+" "
         }
     }
